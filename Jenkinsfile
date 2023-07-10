@@ -6,15 +6,9 @@ pipeline {
 
   stages {
 
-    stage('Code Checkout') {
-      steps {
-        echo 'Code Checkout'
-      }
-    }
-
     stage('Build') {
       steps {
-        echo 'Build'
+        sh 'npm install'
       }
     }
 
