@@ -35,7 +35,7 @@ pipeline {
     stage('Publish a Artifact') {
       when {
         expression {
-          TAG_NAME ==~ ".*"
+          env.TAG_NAME ==~ ".*"
         }
       }
       steps {
