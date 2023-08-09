@@ -11,3 +11,11 @@ serviceAccount:
     eks.amazonaws.com/role-arn: arn:aws:iam::739561048503:role/eks-prod-ssm-pm-role
 
 PARAMETERS: "REDIS_HOST,roboshop.prod.cart.redis_host CATALOGUE_HOST,roboshop.prod.cart.catalogue_host CATALOGUE_PORT,roboshop.prod.cart.catalogue_port"
+
+resources:
+   limits:
+     cpu: 350m
+     memory: 712Mi
+   requests:
+     cpu: 250m
+     memory: 512Mi
